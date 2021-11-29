@@ -33,10 +33,11 @@ All these deployments have been made on GCP's Kubernetes Engine. Hence, before g
 
 ### Sonar
 
-1. Pull the cloud UI into GCP using - `docker pull ramadasmahale/sonarscanner` . Tag the image according to GCP conventions and push to container registry.
-2. Create a new deployment on GKE by selecting the above deployment.  While creating the deployment, leave the default values as is.
-3. Once the deployment is created, expose this as a Loadbalancer service. Be sure to map port 9000 to required port(left to 9000 here) while creating the service.
-4. Once the service is created, navigate to the URL and you must see - 
+1. Build the image using docker build and upload it to your docker hub with the appropriate tag (Here it is pushed to `ramadasmahale/sonarscanner`)
+2. Pull the cloud UI into GCP using - `docker pull ramadasmahale/sonarscanner` . Tag the image according to GCP conventions and push to container registry.
+3. Create a new deployment on GKE by selecting the above deployment.  While creating the deployment, leave the default values as is.
+4. Once the deployment is created, expose this as a Loadbalancer service. Be sure to map port 9000 to required port(left to 9000 here) while creating the service.
+5. Once the service is created, navigate to the URL and you must see - 
 
 <img src="sonar.png">
 
