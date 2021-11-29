@@ -9,6 +9,8 @@ Here is the list of all docker images used for this project -
 5. Sonar - https://hub.docker.com/r/ramadasmahale/sonarscanner (My docker image) - (To build this docker image yourself, you need to download the zip from - https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip , unzp it and place it in the sonar folder. Couldn't upload the zip to github due to size restrictions)
 6. Cloud UI - https://hub.docker.com/r/ramadasmahale/cloud-gui (My docker image)
 
+** Video walkthrough ** - https://drive.google.com/drive/folders/1Cxj89thrwuF8uVvVLUoS40rc420IubiN?usp=sharing
+
 ## Steps to deploy all the images ->
 
 All these deployments have been made on GCP's Kubernetes Engine. Hence, before getting started, create a new project and enable Kubernetes Engine on the project. Once done, perform the following steps - 
